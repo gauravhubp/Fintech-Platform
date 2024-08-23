@@ -51,7 +51,6 @@ Base URL: `http://localhost:5000` (or your deployed backend URL)
 - Method: POST
 - Path: `/register`
 - Body: 
-```json
 {
  "username": "string",
  "email": "string",
@@ -141,7 +140,7 @@ jsonCopy{
 }
 
 
-Design Decisions and Assumptions
+## Design Decisions and Assumptions
 
 Database Schema:
 
