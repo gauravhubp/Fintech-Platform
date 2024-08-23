@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Fintech Platform</h1>
+        <div id="auth-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="account-container" style="display: none;">
+            <h2>Account</h2>
+            <p>Balance: $<span id="balance"></span></p>
+            <form id="deposit-form">
+                <input type="number" id="deposit-amount" placeholder="Amount" required>
+                <button type="submit">Deposit</button>
+            </form>
+            <form id="withdraw-form">
+                <input type="number" id="withdraw-amount" placeholder="Amount" required>
+                <button type="submit">Withdraw</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
